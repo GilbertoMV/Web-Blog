@@ -1,0 +1,9 @@
+body {
+    background-image:url(../images/bgIndex.jpg)
+    ;background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position:center;
+    margin: 0;
+}

@@ -1,0 +1,221 @@
+
+@font-face {
+    font-family: neon;
+    src: url('../founts/neon2.ttf') format('truetype');
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    background-position:center;
+    margin: 0;
+    background-image: url(../images/bgIndex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*Fin del diseño del body*/
+/*Diseño del header 1519347e*/
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(1.7rem);
+    min-height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    bottom: 10rem;
+    transition: .3s;
+    justify-content: space-between;
+}
+.logo {
+    height: 8rem;
+    width: 12rem;
+    padding:  1rem 15rem;
+}
+.nav-admin {
+    display: inline;
+    padding-right: 2rem;
+}
+.nav-admin a {
+    text-align: center;
+    color: #ffff;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-family: neon, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.nav-admin a:hover {
+    background-color: #ffffff;
+    color: #77767c;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.icons {
+    color: #ffff;
+}
+section {
+    background-color: #a0a0a0;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    padding: .1rem;
+}
+section h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #151934;
+}
+main {
+    height: auto;
+}
+.contenedor {
+    width: 100%;
+    display: flex;
+    max-width: 110rem;
+    margin: 4rem auto;
+    align-items: center;
+}
+.cards {
+    width: 25rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #a0a0a098;
+    backdrop-filter: blur(.3rem);
+    box-shadow: 0rem .01rem 1rem rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    font-family: Roboto, Arial;
+
+}
+.cards:hover {
+    box-shadow: .0rem .01rem 1rem #2054ff;
+    transform: translateY(-3%);   
+}
+.cards img {
+    padding: 1rem 0rem;
+    width: 100%;
+    height: 15rem;
+}
+.cards .contenido {
+    padding: -1.5rem;
+    text-align: center;
+}
+.cards .contenido h1 {
+    color: #ffff;
+}
+.cards .contenido p {
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.cards .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    margin: .1rem 0rem 1.5rem 0rem;
+    color: #151934;
+    font-size: 2rem;
+    border: .01rem solid #151934;
+    border-radius: .5rem;
+    transition: all 400ms ease;
+}
+.cards .contenido a:hover {
+    background: #151934;
+    color: #ffff;
+}
+/*FIN DE LA SECCIÓN DEL INDEX ADMINISTRADOR*/
+
+/*INICIO SECCION DE CRUD*/
+table {
+    margin: 2rem auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    backdrop-filter: blur(.5rem);
+    color: #ffff;
+}
+th {
+    padding: 1.5rem;
+    color: #ffff;
+    background-color: #343434;
+
+}
+td {
+    padding: 1.5rem;
+}
+.ver{
+    color: #ffff;
+}
+/*FIN SECCION DE CRUD*/
+
+
+/*INICIO DE LA SECCION BORRADORES*/
+.contenedor1 {
+    width: auto;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;  
+    margin: 1rem auto;
+}
+.cards1 {
+    width: 25rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: #a0a0a0;
+    box-shadow: 0rem .01rem 1rem rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.cards1:hover {
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease; 
+}
+.cards1 img {
+    width: 100%;
+}
+.cards1 .contenido1 {
+    padding: -1.5rem;
+    text-align: center;
+}
+.cards1 .contenido1 p {
+    line-height: 1;
+    color: #151934;
+    font-size: 2rem;
+}
+.cards1 .contenido1 a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    margin: .1rem 0rem 1.5rem 0rem;
+    color: #151934;
+    font-size: 2rem;
+    border: .01rem solid #151934;
+    border-radius: .5rem;
+    transition: all 400ms ease;
+}
+.cards1 .contenido1 a:hover {
+    background: #151934;
+    color: #ffff;
+}
+/*FIN DE LA SECCIÓN BORRADORES*/
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+    .nav-admin {
+        padding: 2rem;
+    }
+}
